@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f9ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.semesters {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.semester-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.semester {
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.semester label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.semester input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.semester p {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.fee-structure {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.total-fee {
+    margin-top: 20px;
+    background-color: #002d72;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.total-fee button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total-fee button:hover {
+    background: #e63939;
+}
