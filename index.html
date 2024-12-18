@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNTUH Backlog Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JNTUH Backlog Fee Calculator</h1>
+        <div class="semesters">
+            <!-- Input sections for all semesters -->
+            <div class="semester-inputs">
+                <div class="semester" id="sem1">
+                    <label>Semester 1 Backlogs</label>
+                    <input type="number" min="0" id="sem1-input" placeholder="Enter number of backlogs" oninput="calculateFee(1)">
+                    <p>Fee: ₹<span id="sem1-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem2">
+                    <label>Semester 2 Backlogs</label>
+                    <input type="number" min="0" id="sem2-input" placeholder="Enter number of backlogs" oninput="calculateFee(2)">
+                    <p>Fee: ₹<span id="sem2-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem3">
+                    <label>Semester 3 Backlogs</label>
+                    <input type="number" min="0" id="sem3-input" placeholder="Enter number of backlogs" oninput="calculateFee(3)">
+                    <p>Fee: ₹<span id="sem3-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem4">
+                    <label>Semester 4 Backlogs</label>
+                    <input type="number" min="0" id="sem4-input" placeholder="Enter number of backlogs" oninput="calculateFee(4)">
+                    <p>Fee: ₹<span id="sem4-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem5">
+                    <label>Semester 5 Backlogs</label>
+                    <input type="number" min="0" id="sem5-input" placeholder="Enter number of backlogs" oninput="calculateFee(5)">
+                    <p>Fee: ₹<span id="sem5-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem6">
+                    <label>Semester 6 Backlogs</label>
+                    <input type="number" min="0" id="sem6-input" placeholder="Enter number of backlogs" oninput="calculateFee(6)">
+                    <p>Fee: ₹<span id="sem6-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem7">
+                    <label>Semester 7 Backlogs</label>
+                    <input type="number" min="0" id="sem7-input" placeholder="Enter number of backlogs" oninput="calculateFee(7)">
+                    <p>Fee: ₹<span id="sem7-fee">0</span></p>
+                </div>
+                <div class="semester" id="sem8">
+                    <label>Semester 8 Backlogs</label>
+                    <input type="number" min="0" id="sem8-input" placeholder="Enter number of backlogs" oninput="calculateFee(8)">
+                    <p>Fee: ₹<span id="sem8-fee">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fee Structure -->
+        <div class="fee-structure">
+            <h2>Fee Structure</h2>
+            <ul>
+                <li>1 Backlog: ₹360</li>
+                <li>2 Backlogs: ₹460</li>
+                <li>3 Backlogs: ₹560</li>
+                <li>4 or more Backlogs: ₹760</li>
+            </ul>
+        </div>
+
+        <!-- Total Fee -->
+        <div class="total-fee">
+            <h2>Total Fee</h2>
+            <p>₹<span id="total-fee">0</span></p>
+            <button onclick="resetAll()">Reset All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
